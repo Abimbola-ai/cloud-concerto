@@ -13,14 +13,10 @@ const NavSection = () => {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg border-bottom border-black">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand">
-          <img
-            src="/images/logo.png"
-            alt="Billify Logo"
-            style={{ width: '100px', height: 'auto' }}
-          />
+          CloudConcerto
         </Link>
         <button
           className="navbar-toggler"
@@ -33,21 +29,24 @@ const NavSection = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <div
+          className="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
-                Invoice Management
+                Concert Schedule
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Create Invoice
+                Artists
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                Manage Invoice
+                Tickets
               </a>
             </li>
             <li className="nav-item dropdown">
@@ -58,37 +57,34 @@ const NavSection = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                More Options
+                Blog
               </a>
               <ul className="dropdown-menu">
                 <li>
                   <a className="dropdown-item" href="#">
-                    Action
-                  </a>
-                </li>
-                <li>
-                  <a clasName="dropdown-item" href="#">
-                    Another action
+                    Mavin Gaye Next Tour
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    Something else here
+                    Black Eye Peas New Concert
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Barbie and the Gorillas
                   </a>
                 </li>
               </ul>
             </li>
           </ul>
-          <div className="d-flex">
-            <button type="button" className="btn btn-more me-2">
-              Learn More
-            </button>
+          <div>
             <button
               type="button"
-              className="btn btn-login"
+              className="btn btn-black"
               onClick={handleGetStartedClick}
             >
-              Sign In
+              Sign Up
             </button>
           </div>
         </div>
